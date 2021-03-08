@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/* font: inherit; */
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* ------------------------------ */
+
+.superWrapper {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 4% 0 1% 0;
+}
+
+h3 {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: lightsteelblue;
+    margin: 3%;
+}
+
+h4 {
+    line-height: 2;
+}
+
+.wrapperHeader {
+    background-color: darkslategray;
+    color: white;
+    width: 100%;
+    margin: 0 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.inputForm {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+.wrapperResult {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrap{
+    width: 80%;
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    padding: 3%;
+}
+
+.quesBox {
+    margin: 1%;
+}
+
+.ansBox p {
+    min-height: 55px;
+    min-width: 250px;
+    margin: 2% 0%;
+    background-color: #cccccc;
+	color: rgb(0, 0, 0);
+	padding:15px 15px;
+	text-align: center;
+    cursor: pointer;
+}
+
+
+/* ------------------MEDIA QUERIES------------------*/
+
+@media screen and (min-width: 768px){
+    h1 {
+        margin: 2.5%;
+        font-size: 4rem;
+    }
+    
+    h3 {
+        margin: 0 0 1% 0;
+        font-size: 1.2rem;
+    }
+    
+    .inputForm {
+        padding: 1%;
+    }
+}
