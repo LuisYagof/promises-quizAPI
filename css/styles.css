@@ -103,12 +103,12 @@ h4 {
     justify-content: center;
 }
 
-.wrap{
-    width: 80%;
-    background-color: rgb(236, 236, 236);
+.wrap {
+    width: 100%;
+    background-color: rgb(246, 246, 246);
     display: flex;
     flex-direction: column;
-    margin: 1%;
+    margin: 3% 0;
     padding: 3%;
 }
 
@@ -122,6 +122,7 @@ h4 {
     margin: 2% 0%;
     background-color: #cccccc;
 	color: rgb(0, 0, 0);
+    font-size: 0.8rem;
 	padding:15px 15px;
 	text-align: center;
     cursor: pointer;

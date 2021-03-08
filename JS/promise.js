@@ -8,7 +8,7 @@ function getQuestions(maxNumberQuestions = 5) {
 		if (!QUESTIONS_API_KEY)
 			throw new Error("An API KEY must be provided on /JS/promise.js line 4 for function getQuestions to work");
 		else if (maxNumberQuestions < 1)
-			throw new Error("maxNumberQuestions must be greater than 0");
+			alert("maxNumberQuestions must be greater than 0");
 		else {
 			fetch(`https://quizapi.io/api/v1/questions?apiKey=${QUESTIONS_API_KEY}&category=code&difficulty=Easy&limit=${maxNumberQuestions}&tags=JavaScript`)
 			.then(response => response.json())
