@@ -6,7 +6,7 @@ const WRAPPERresult = document.querySelector('#wrapperResult')
 function getQuestions(maxNumberQuestions = 5) {
 	return new Promise((resolve, reject) => {
 		if (!QUESTIONS_API_KEY)
-			throw new Error("An API KEY must be provided on /JS/promise.js line 4 for function getQuestions to work");
+			alert("An API KEY must be provided");
 		else if (maxNumberQuestions < 1)
 			alert("The number of questions must be greater than 0");
 		else {
